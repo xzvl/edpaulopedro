@@ -1,37 +1,34 @@
-import { LOGO_DATA_URI } from '@/lib/constants'
-
 export default function Footer() {
   return (
     <footer className="bg-surface border-t border-white/5 w-full py-12 px-6 md:px-margin-desktop">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-container-max mx-auto">
         <div className="flex items-center gap-3">
-          <img alt="Obsidian Core Logo" className="h-6 w-auto" src={LOGO_DATA_URI} />
-          <span className="font-headline-md text-headline-md text-on-surface">Obsidian Core</span>
+          <img alt="Ed Paulo Pedro" className="h-8 w-auto" src="/assets/alt-logo.webp" />
         </div>
 
         <div className="flex gap-8">
           <a
             className="font-label-mono text-label-mono uppercase text-on-surface-variant/50 hover:text-cyber-red transition-colors"
-            href="#"
+            href="https://xzvl.vercel.app/"
           >
-            GitHub
+            XZVL
           </a>
           <a
             className="font-label-mono text-label-mono uppercase text-on-surface-variant/50 hover:text-cyber-red transition-colors"
-            href="#"
+            href="https://www.linkedin.com/in/edpaulopedro/"
           >
             LinkedIn
           </a>
           <a
             className="font-label-mono text-label-mono uppercase text-on-surface-variant/50 hover:text-cyber-red transition-colors"
-            href="#"
+            href="https://www.facebook.com/edpaulopedro"
           >
-            Source Code
+            Facebook
           </a>
         </div>
 
         <p className="font-label-mono text-label-mono uppercase text-on-surface-variant/30">
-          © 2024 Obsidian Core. All rights reserved.
+          © 2026 Ed Paulo Pedro. All rights reserved.
         </p>
       </div>
     </footer>

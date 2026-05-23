@@ -1,3 +1,5 @@
+import AnimateIn from './AnimateIn'
+
 export default function About() {
   return (
     <section
@@ -5,64 +7,63 @@ export default function About() {
       id="about"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
-        <div className="relative">
-          <div className="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
-            <img
-              className="w-full h-full object-cover grayscale brightness-75"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLVbvYdJr3REYK0uTct-8GdC0N17PRgkjMDREzSwA5nhmbzE4AcxCLVxh4bOWkvXgq5ULB8tbLUSUrKJmG7Dchr5BTK-GybAv3deIk8b-yWgcowxRgM7lSi1SzxoWv2g1uCct7AkrxeT61DjXvFMek7ePcVmxi3a1fXB3RRq6yJfLCR8sRshUy3JBVA4M7qBqCrf7oukGM2-Xl_pjT891AqnlkARcLDzK80dho9GzBjuvIXH-yZZxu4-NfeIX4Jsphz62ESmqUfHf4"
-              alt="Ed Paulo Pedro — senior developer portrait"
-            />
-          </div>
-          <div className="absolute -bottom-10 -right-10 glass-card p-8 rounded-xl hidden md:block">
-            <div className="space-y-6">
-              <div>
-                <div className="font-display-xl text-headline-lg text-cyber-red">120+</div>
-                <div className="font-label-mono text-[10px] uppercase tracking-tighter">
-                  Deploys Verified
-                </div>
-              </div>
-              <div>
-                <div className="font-display-xl text-headline-lg text-on-surface">99.9%</div>
-                <div className="font-label-mono text-[10px] uppercase tracking-tighter">
-                  Uptime Goal
-                </div>
-              </div>
+        <AnimateIn from="left" delay={0}>
+          <div className="relative">
+            <div className="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
+              <img
+                className="w-full h-full object-cover brightness-75"
+                src="/assets/me.png"
+                alt="Ed Paulo Pedro — senior developer portrait"
+              />
             </div>
+            <AnimateIn from="bottom" delay={300} className="absolute -bottom-10 -right-10 hidden md:block">
+              <div className="glass-card p-8 rounded-xl">
+                <div className="space-y-6">
+                  <div>
+                    <div className="font-display-xl text-headline-lg text-cyber-red">1000+</div>
+                    <div className="font-label-mono text-[10px] uppercase tracking-tighter">
+                      Website Handled
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-display-xl text-headline-lg text-on-surface">10+</div>
+                    <div className="font-label-mono text-[10px] uppercase tracking-tighter">
+                      Platform Learned
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-display-xl text-headline-lg text-on-surface">12+</div>
+                    <div className="font-label-mono text-[10px] uppercase tracking-tighter">
+                      Years of Experience
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimateIn>
           </div>
-        </div>
+        </AnimateIn>
 
         <div className="space-y-8">
-          <span className="font-label-mono text-label-mono text-cyber-red uppercase tracking-widest">
-            History
-          </span>
-          <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
-            The Architect&apos;s <span className="text-cyber-red">Journey.</span>
-          </h2>
-          <p className="font-body-lg text-on-surface-variant">
-            I build digital systems with the same precision and intent as physical engineering. My
-            philosophy centers on &ldquo;Technical Minimalism&rdquo;—where every line of code serves
-            a purpose, and performance is a feature, not an afterthought.
-          </p>
-          <div className="grid grid-cols-1 gap-6 pt-8">
-            <div className="flex items-start gap-4">
-              <span className="material-symbols-outlined text-cyber-red">verified</span>
-              <div>
-                <h4 className="font-headline-md text-body-lg text-on-surface">Systems Thinker</h4>
-                <p className="font-body-md text-on-surface-variant/70">
-                  Approaching UI as a high-performance engine, optimized for speed and reliability.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <span className="material-symbols-outlined text-cyber-red">design_services</span>
-              <div>
-                <h4 className="font-headline-md text-body-lg text-on-surface">Elite Craftsmanship</h4>
-                <p className="font-body-md text-on-surface-variant/70">
-                  Bridging the gap between brutalist engineering and cinematic aesthetics.
-                </p>
-              </div>
-            </div>
-          </div>
+          <AnimateIn from="right" delay={0}>
+            <span className="font-label-mono text-label-mono text-cyber-red uppercase tracking-widest">
+              THE DEVELOPER // BIO
+            </span>
+          </AnimateIn>
+          <AnimateIn from="right" delay={100}>
+            <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+              Ed Paulo <span className="text-cyber-red">Pedro.</span>
+            </h2>
+          </AnimateIn>
+          <AnimateIn from="right" delay={200}>
+            <p className="font-body-lg">
+              I am a passionate and experienced Senior Web Developer with more than 12 years of experience in web development, WordPress development, and full-stack solutions. Throughout my career, I have worked with local and international companies in remote and on-site environments, delivering high-quality websites, custom themes, plugins, and web applications. I specialize in technologies such as HTML, PHP, CSS, JavaScript, ReactJS, NextJS, WordPress, Shopify, Webflow, API integration, and AI automation tools like Zapier.
+            </p>
+          </AnimateIn>
+          <AnimateIn from="right" delay={320}>
+            <p className="font-body-lg text-on-surface-variant">
+              I am highly adaptable, detail-oriented, and committed to continuous learning to stay updated with modern web technologies and industry trends. My experience in handling multiple projects, collaborating with teams, and providing efficient digital solutions has strengthened my ability to work under pressure while maintaining quality and performance. I am passionate about creating user-friendly, responsive, and scalable websites that help businesses grow and succeed online.
+            </p>
+          </AnimateIn>
         </div>
       </div>
     </section>

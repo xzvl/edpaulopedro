@@ -2,8 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Obsidian Core // Architecting Digital Excellence',
+  title: 'Ed Paulo Pedro // Web Developer',
   description: 'Senior Web Developer specializing in high-performance systems and technical minimalism.',
+  icons: {
+    icon: '/assets/favicon.webp',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
