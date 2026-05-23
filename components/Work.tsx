@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import AnimateIn from './AnimateIn'
 
 const projects = [
@@ -47,16 +48,16 @@ export default function Work() {
   return (
     <section className="py-32 px-6 md:px-margin-desktop w-full max-w-container-max mx-auto" id="work">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-        <div className="max-w-xl">
+        <div className="max-w-xl w-[100%]">
           <AnimateIn from="left" delay={0}>
             <span className="font-label-mono text-label-mono text-cyber-red uppercase mb-4 block tracking-widest">
-              Selected Works
+              Works
             </span>
           </AnimateIn>
           <AnimateIn from="left" delay={120}>
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
-              Curated Deployments //{' '}
-              <span className="font-light opacity-50">Selected Case Studies</span>
+              Portfolio //{' '}
+              <span className="font-light opacity-50">Websites</span>
             </h2>
           </AnimateIn>
         </div>
@@ -68,8 +69,9 @@ export default function Work() {
           <AnimateIn key={project.id} className={`${project.colSpan}`} delay={i * 120}>
             <div className="glass-card rounded-xl overflow-hidden group h-full">
               <div className="relative h-[400px] md:h-[500px]">
-                <img
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                <Image
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                   src={project.image}
                   alt={project.alt}
                 />

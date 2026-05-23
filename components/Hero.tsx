@@ -38,7 +38,9 @@ export default function Hero() {
           </a>
           <a
             className="w-full md:w-auto border border-white/20 hover:border-cyber-red/50 text-on-surface px-10 py-4 rounded-sm font-label-mono text-body-md uppercase tracking-widest transition-all backdrop-blur-sm"
-            href="#"
+            href="/assets/resume-2026.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download Resume
           </a>

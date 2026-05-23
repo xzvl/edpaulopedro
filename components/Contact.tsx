@@ -85,7 +85,7 @@ export default function Contact() {
                     required
                   />
                   <label
-                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all peer-placeholder-shown:text-body-lg peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
+                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all lg:peer-placeholder-shown:text-body-lg text-body-md peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
                     htmlFor="name"
                   >
                     Full Name
@@ -105,10 +105,10 @@ export default function Contact() {
                     required
                   />
                   <label
-                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all peer-placeholder-shown:text-body-lg peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
+                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all lg:peer-placeholder-shown:text-body-lg text-body-md peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
                     htmlFor="email"
                   >
-                    Digital Address
+                    Email Address
                   </label>
                 </div>
               </AnimateIn>
@@ -125,10 +125,10 @@ export default function Contact() {
                     required
                   />
                   <label
-                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all peer-placeholder-shown:text-body-lg peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
+                    className="absolute left-0 top-4 text-on-surface-variant font-label-mono uppercase text-[10px] tracking-widest transition-all lg:peer-placeholder-shown:text-body-lg text-body-md peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-cyber-red"
                     htmlFor="message"
                   >
-                    Transmission Data
+                    Message
                   </label>
                 </div>
               </AnimateIn>
@@ -138,7 +138,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === 'sending'}
-                    className="w-full md:w-auto bg-cyber-red text-white px-12 py-5 rounded-sm font-label-mono text-body-md uppercase tracking-widest cyber-red-glow transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full md:w-auto bg-cyber-red text-white lg:px-12 px-6 py-5 rounded-sm font-label-mono text-body-md uppercase tracking-widest cyber-red-glow transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {status === 'sending' ? 'Transmitting...' : 'Execute Dispatch'}
                   </button>

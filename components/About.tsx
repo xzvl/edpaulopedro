@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import AnimateIn from './AnimateIn'
 
 export default function About() {
@@ -9,9 +10,10 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
         <AnimateIn from="left" delay={0}>
           <div className="relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
-              <img
-                className="w-full h-full object-cover brightness-75"
+            <div className="relative aspect-[4/5] rounded-xl overflow-hidden glass-card p-2">
+              <Image
+                fill
+                className="object-cover brightness-75"
                 src="/assets/me.png"
                 alt="Ed Paulo Pedro — senior developer portrait"
               />

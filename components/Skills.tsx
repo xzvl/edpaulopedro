@@ -2,11 +2,12 @@ import AnimateIn from './AnimateIn'
 
 const groups = [
   {
-    title: 'Core Runtimes',
+    title: 'Full Stacks',
     icon: 'terminal',
     skills: [
       { icon: 'javascript', label: 'Next.js' },
       { icon: 'code', label: 'TypeScript' },
+      { icon: 'php', label: 'PHP' },
     ],
   },
   {
@@ -47,16 +48,16 @@ export default function Skills() {
   return (
     <section className="py-32 px-6 md:px-margin-desktop bg-surface-container-lowest/50" id="skills">
       <div className="max-w-container-max mx-auto">
-        <div className="text-center mb-24">
+        <div className="md:text-center mb-24">
           <AnimateIn from="none" delay={0}>
             <span className="font-label-mono text-label-mono text-cyber-red uppercase tracking-widest mb-4 block">
-              Core Competencies
+              Skills
             </span>
           </AnimateIn>
           <AnimateIn from="bottom" delay={120}>
             <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
-              The Stack //{' '}
-              <span className="font-light opacity-50">Version 4.0</span>
+              CMS //{' '}
+              <span className="font-light opacity-50">Platforms</span>
             </h2>
           </AnimateIn>
         </div>
