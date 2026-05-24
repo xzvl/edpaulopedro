@@ -1,11 +1,34 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+const siteUrl = 'https://edpaulopedro.com'
+const siteTitle = 'Ed Paulo Pedro // Web Developer'
+const siteDescription = 'Senior Web Developer specializing in high-performance systems and technical minimalism.'
+const siteImage = `${siteUrl}/assets/screenshot.png`
+
 export const metadata: Metadata = {
-  title: 'Ed Paulo Pedro // Web Developer',
-  description: 'Senior Web Developer specializing in high-performance systems and technical minimalism.',
+  title: siteTitle,
+  description: siteDescription,
+  metadataBase: new URL(siteUrl),
   icons: {
     icon: '/assets/favicon.webp',
+  },
+  openGraph: {
+    type: 'website',
+    url: siteUrl,
+    title: siteTitle,
+    description: siteDescription,
+    images: [{ url: siteImage, width: 1200, height: 630, alt: siteTitle }],
+    siteName: 'Ed Paulo Pedro',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteTitle,
+    description: siteDescription,
+    images: [siteImage],
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 }
 

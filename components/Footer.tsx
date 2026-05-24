@@ -12,18 +12,24 @@ export default function Footer() {
           <a
             className="font-label-mono text-label-mono uppercase hover:text-cyber-red transition-colors"
             href="https://xzvl.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             XZVL
           </a>
           <a
             className="font-label-mono text-label-mono uppercase hover:text-cyber-red transition-colors"
-            href="https://www.linkedin.com/in/edpaulopedro/"
+            href="https://www.linkedin.com/in/ed-paulo-pedro/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>
           <a
             className="font-label-mono text-label-mono uppercase hover:text-cyber-red transition-colors"
             href="https://www.facebook.com/edpaulopedro"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Facebook
           </a>
