@@ -22,7 +22,7 @@ export default function About() {
               <div className="glass-card p-8 rounded-xl">
                 <div className="space-y-6">
                   <div>
-                    <div className="font-display-xl text-headline-lg text-cyber-red">1000+</div>
+                    <div className="font-display-xl text-headline-lg text-cyber-red">500+</div>
                     <div className="font-label-mono text-[10px] uppercase tracking-tighter">
                       Website Handled
                     </div>
