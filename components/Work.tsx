@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import AnimateIn from './AnimateIn'
 
 const projects = [
@@ -100,6 +101,15 @@ export default function Work() {
           </AnimateIn>
         ))}
       </div>
+
+      <AnimateIn from="bottom" delay={480} className="flex justify-center mt-12">
+        <Link
+          href="/portfolio"
+          className="border border-white/20 text-on-surface-variant px-8 py-3 rounded-sm font-label-mono text-label-mono uppercase tracking-widest hover:border-cyber-red hover:text-cyber-red transition-all duration-300"
+        >
+          Visit More Portfolio
+        </Link>
+      </AnimateIn>
     </section>
   )
 }
