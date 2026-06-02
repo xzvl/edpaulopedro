@@ -581,7 +581,7 @@ export const portfolioData: PortfolioEntry[] = [
   { url: 'onwarditc', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
   { url: 'titusvillelutherans', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
   { url: 'zingrealty', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
-  { url: 'http://antlerrecords.com/', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
+  { url: 'http://antlerrecords.com/', platform: 'WordPress', company: 'Powered', contribution: '100%', active: 'yes' },
   { url: 'http://www.idltravel.com/', platform: 'WordPress', company: 'Powered', contribution: '30%', active: 'yes' },
   { url: 'diamondland', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
   { url: 'shulsharela', platform: 'WordPress', company: 'Powered', contribution: '', active: '' },
